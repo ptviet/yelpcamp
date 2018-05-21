@@ -19,6 +19,7 @@ var commentRoutes    = require("./routes/comments"),
 
 // connect to MongoDB
 var url = process.env.DATABASEURL;
+
 mongoose
     .connect(url)
     .then(() => console.log("Connected to MongoDB"))
