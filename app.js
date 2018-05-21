@@ -18,8 +18,7 @@ var commentRoutes    = require("./routes/comments"),
     indexRoutes      = require("./routes/index")
 
 // connect to MongoDB
-// var url = process.env.DATABASEURL;
-var url = "mongodb://sphan:sphan@ds121999.mlab.com:21999/yelp_camp";
+var url = process.env.DATABASEURL;
 mongoose
     .connect(url)
     .then(() => console.log("Connected to MongoDB"))
